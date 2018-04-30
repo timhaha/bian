@@ -1,0 +1,51 @@
+<img id="logo" src="biantongzhou.png" alt="bian tongzhou" />
+<!--<p id="demo"></p>倒计时-->
+			<nav class="navigation">	
+				<ul class="first">
+					<li><a href="index.php">主页</a></li>
+					<li>
+						<a href="about.php">关于我们</a>
+						<ul class="second">
+							<li><a href="intro.php">公司简介</a></li>
+							<li><a href="culture.php">企业文化</a></li>
+							<li><a href="esta.php">创立背景</a></li>
+							<li><a href="aim.php">公司目标</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="a">公司业务</a>
+						<ul class="second">
+							<li>
+								<a href="">课程培训</a>
+								<ul class="third">
+									<li><a href="a">GRE</a></li>
+									<li><a href="a">GMAT</a></li>
+									<li><a href="a">SAT</a></li>
+								</ul>
+							</li>
+							<li><a href="apply.php">留学申请</a></li>
+							<li><a href="">安居服务</a></li>
+							<li><a href="">投资移民</a></li>
+							<li><a href="">旅游游学</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="a">战略合作</a>
+						<ul class="second">
+							<li><a href="a">诚信出国</a></li>
+							<li><a href="a">美国河南留学生联谊会</a></li>
+							<li><a href="a">优胜出行策划</a></li>
+							<li><a href="a">独立谣</a></li>
+							<li><a href="a">美东河南同乡会</a></li>
+							<li><a href="a">纽约国际教育集团</a></li>
+							<li><a href="a">数问Data Question</a></li>
+							<li><a href="a">Philly Finprep</a></li>
+							<li><a href="a">The Q StudioLab</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact.php">联系我们</a>
+					</li>
+					<li><a href="a">社区</a></li>
+				</ul>
+			</nav>
