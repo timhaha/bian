@@ -1,0 +1,50 @@
+.footer_title{
+	text-align:center;
+	font-size:50px;
+	color:green;
+	padding:0px;
+	margin:0px;
+}
+.slider{
+	overflow:hidden;
+	/*height:auto;*/
+	vertical-align:middle;
+}
+
+.slider figure div{
+	width:6.66%;
+	float:left;
+	display:inline-block;
+}
+
+.slider figure img{
+	width:100%;
+	/*float:left;*/			
+}
+
+.slider figure{
+	position:relative;
+	width:300%;
+	margin:0;
+	left:0;
+	animation:35s slidy infinite;
+	vertical-align:middle;
+}
+
+@keyframes slidy{
+	0%{
+		left:0%;
+	}
+	5%{
+		left:-100%;
+	}
+	33%{
+		left:-200%;
+	}
+	65%{
+		left:-100%;
+	}
+	87%{
+		left:0%;
+	}
+}

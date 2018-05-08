@@ -1,0 +1,146 @@
+<html>
+	<head>
+		<script>
+			function getStyleValue(elem, property) {
+  return window.getComputedStyle(elem).getPropertyValue(property);
+}
+
+const arrows = document.querySelectorAll(".carousel .arrow"),
+  [leftArrow, rightArrow] = arrows,
+  slideContainer = document.querySelector(".carousel .slide-container"),
+  slides = document.getElementsByClassName("slide"),
+  amt = parseInt(getStyleValue(slides[0], "width"));
+
+try {
+  let trans = parseInt(
+    getStyleValue(slideContainer, "transform")
+      .split(",")[4]
+      .trim()
+  );
+} catch (e) {
+  console.log("`trans` being set to 0");
+  trans = 0;
+}
+
+function slide() {
+  if (this === rightArrow) {
+    trans -= amt;
+  } else if (this === leftArrow) {
+    trans += amt;
+  }
+  if (trans <= amt * slides.length / 2 * -1) {
+    rightArrow.style.display = "none";
+  } else if (trans >= 0) {
+    leftArrow.style.display = "none";
+  } else {
+    arrows.forEach(arrow => (arrow.style.display = "inline-block"));
+  }
+  slideContainer.style.transform = `translate(${trans}px)`;
+}
+
+arrows.forEach(arrow => arrow.addEventListener("click", slide));
+		</script>
+		<style>
+			body *::selection {
+  background: none;
+}
+
+.carousel {
+  --height: 128px;
+  --width: 120px;
+  display: block;
+  margin: 100px auto 0;
+  height: var(--height);
+  text-align: center;
+}
+
+.carousel * {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  height: 100%;
+}
+
+.arrow-container {
+  --width-arrow: 64px;
+  width: var(--width-arrow);
+}
+
+.arrow {
+  --arrow-width: calc(var(--width-arrow) / 2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--arrow-width);
+  height: var(--arrow-width);
+  background-color: white;
+  font-weight: bold;
+  line-height: var(--arrow-width);
+  border-radius: 50%;
+  transform: translate(-50%) translateY(-50%);
+  transition: background-color 111ms, color 222ms;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.arrow:active {
+  transform: scale(0.9) translate(-50%) translateY(-50%);
+}
+
+.arrow.left {
+  display: none;
+}
+
+.display-container {
+  /* * 4 to show 4 slides */
+  width: calc(var(--width) * 4 - 2px);
+  overflow-x: hidden;
+}
+
+.slide-container {
+  /* * 8 cause that's the number of slides */
+  width: calc(var(--width) * 8);
+  /* start by going left 2 slides */
+  /* transform: translate(calc(var(--width) * -2)); */
+  transition: transform 333ms;
+}
+
+.slide {
+  margin-left: -4px;
+  width: var(--width);
+  background-color: salmon;
+}
+
+.slide:nth-child(2n) {
+  background-color: cornflowerblue;
+}
+		</style>
+	</head>
+	<body>
+		<div class="carousel">
+  <div class="arrow-container">
+    <span class="arrow left">&lt;</span>
+  </div>
+  <div class="display-container">
+    <div class="slide-container">
+      <div class="slide">1</div>
+      <div class="slide">2</div>
+      <div class="slide">3</div>
+      <div class="slide">4</div>
+      <div class="slide">5</div>
+      <div class="slide">6</div>
+      <div class="slide">7</div>
+      <div class="slide">8</div>
+    </div>
+  </div>
+  <div class="arrow-container">
+    <span class="arrow right">&gt;</span>
+  </div>
+</div>
+	</body>
+
+</html>

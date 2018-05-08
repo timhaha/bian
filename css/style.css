@@ -1,0 +1,1159 @@
+﻿body{
+	font-family:'Open Sans',Verdana,Helvetica,sans-serif;
+	margin:0px;
+	padding:0px;
+	font-weight:bold;
+}
+.page{
+	margin:0 auto;		
+}
+
+#header{
+	position:fixed;
+	top:0;
+	z-index:2;
+}
+p{
+	line-height:2.0;
+}
+#logo{
+	vertical-algin:top;
+	height:56px;
+	width:17%;
+	margin:0px;
+	display:inline-block;
+}
+
+nav.navigation{
+	/*background-color:#333;*/
+	padding:0px;
+	width:83%;
+	font-size:24px;
+	display:inline-block;
+	-webkit-transition:max-height 0.2s;
+	-ms-transition:max-height 0.2s;
+	-moz-transition:max-height 0.2s;
+	-o-transition:max-height 0.2s;
+}
+#menu_all{
+	float:right;
+	vertical-align:middle;
+}
+#menu{
+	width: 32px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+._logo_mp4{
+	width:100%;
+	margin:0px;
+	z-index:1;
+}
+ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	/*display:table;*/	
+}
+ul.first > li{
+	float:left;
+}
+ul.first > li > a{
+	color:black;
+}
+ul li a{
+	text-decoration:none;
+	color:white;
+	display:block;
+	padding:16px 45px;
+	/*background-color:#333;*/
+}
+ul li a:hover{
+	color:white;
+	text-decoration:underline;
+	background-color: rgba(0, 0, 0, .1);
+}
+	
+.second{
+	position:absolute;
+	display:none;
+}
+.second li a{
+	background-color:black;
+}
+.third{
+	position:absolute;
+	left:100%;
+	top:0%;
+	display:none;
+	background-color:pink;
+}
+ul.second li:hover a{
+	color:black;
+	background-color: rgba(0, 0, 0, .1);
+}
+
+ul.first li:hover .second{
+	display:block;
+}
+ul.second li:hover .third{
+	display:block;	
+}
+.handle{
+	width:100%;
+	background-color:#005c48;
+	text-align:left;
+	box-sizing:border-box;
+	padding:15px 10px;
+	cursor:pointer;
+	color:white;
+	font-size:19px;
+	display:none;
+}
+#offer{
+	width:100%;
+}
+#offer tr td{
+	text-align:center;
+	width:33.3%;
+	border:2px solid grey;
+}
+#offer tr td img{
+	width:100%;
+}
+.content,#offer{
+	background-color:white; 
+	padding:10px 200px;
+}
+.theme{
+		position:relative;
+		left:-50%;
+		font-size:50px; 
+		font-family:Microsoft YaHei;
+	}
+	
+table tr td{text-align:center}
+
+@media screen and (max-width:485px){
+	#logo{
+		width:100%;
+		margin:0px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
+/*Device iphone*/
+/* https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  #logo{
+		width:100%;
+		margin:0px;
+		height:200px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  #logo{
+		width:100%;
+		margin:0px;
+		height:200px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  #logo{
+		width:100%;
+		margin:0px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  #logo{
+		width:100%;
+		margin:0px;
+		height:200px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  #logo{
+		width:100%;
+		margin:0px;
+		height:200px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  #logo{
+		width:100%;
+		margin:0px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  #logo{
+		width:100%;
+		margin:0px;
+		height:200px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+  #logo{
+		width:100%;
+		margin:0px;
+		height:200px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+  #logo{
+		width:100%;
+		margin:0px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  #logo{
+		width:100%;
+		margin:0px;
+		height:200px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+  #logo{
+		width:100%;
+		margin:0px;
+		height:200px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+  #logo{
+		width:100%;
+		margin:0px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  #logo{
+		width:100%;
+		margin:0px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+  #logo{
+		width:100%;
+		margin:0px;
+		height:200px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+  #logo{
+		width:100%;
+		margin:0px;
+		display:block;
+	}
+	nav.navigation{
+		padding:0px;
+		width:100%;
+		font-size:24px;
+		display:block;
+		max-height:0;
+	}
+	.showing2{
+		/*color:white!important;*/
+		visibility:visible!important;
+	}
+	ul.first > li{
+		float:none;
+		width:100%;
+		text-align:center;
+		background-color:blue;
+	}
+	ul.first > li a{
+		/*color:#005c48;*/
+		visibility:hidden;
+	}
+	ul.first li:hover .second{
+		display:block;
+		width:100%;
+	}
+	ul.second li:hover .third{
+		display:block;
+		width:100%;	
+	}
+	#header{
+		position:static;
+		top:0;
+	}
+	nav.navigation.showing{
+		max-height:40em;
+	}
+	
+	.theme{
+		font-size:12px; 
+		font-family:Microsoft YaHei;
+		position:relative;
+		left:-50%;
+	}
+	.handle{
+		display:block;
+	}
+	.content{
+		width:100%;
+		padding:15px;
+	}
+}
