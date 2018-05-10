@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<title>Navigation Menu</title>
+		<title>Beyond Joy</title>
 		<link href="css/style.css" rel="stylesheet"/>
 		<link href="css/footer.css" rel="stylesheet"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
