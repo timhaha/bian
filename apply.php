@@ -45,11 +45,6 @@
 					<td><img src="img/offer/Picture26.png" ></td>
 					<td><img src="img/offer/Picture28.png" ></td>
 				</tr>
-				<tr>
-					<td><img src="img/offer/Picture29.png" ></td>
-					<td></td>
-					<td></td>
-				</tr>
 			</table>
 		</div>
 	</body>
