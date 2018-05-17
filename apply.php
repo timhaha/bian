@@ -2,9 +2,26 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Beyond Joy</title>
-		<link rel="icon" href="img/biantongzhou.png">
 		<link href="css/style.css" rel="stylesheet"/>
 		<link href="css/footer.css" rel="stylesheet"/>
+		<style>
+			.pic{
+				width:200px;
+				height:250px;
+				/*width:100%;*/
+				border:2px solid green;
+			}
+			.picbig{
+				position:absolute;
+				width:0px;
+				-webkit-transition:width 0.3s linear 0s;
+				transition:width 0.3s linear 0s; 
+				z-index:10;
+			}
+			.pic:hover + .picbig{
+				width:600px;
+			}
+		</style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 		<script src="js/count_down.js"></script>
@@ -26,24 +43,24 @@
 			</div>	
 			<table id="offer">
 				<tr>
-					<td><img src="img/offer/Picture4.png" ></td>
-					<td><img src="img/offer/Picture7.png" ></td>
-					<td><img src="img/offer/Picture8.png" ></td>
+					<td><img class="pic" src="img/offer/Picture4.png" ><img class="picbig" src="img/offer/Picture4.png" ></td>
+					<td><img class="pic" src="img/offer/Picture7.png" ><img class="picbig" src="img/offer/Picture7.png" ></td>
+					<td><img class="pic" src="img/offer/Picture8.png" ><img class="picbig" src="img/offer/Picture8.png" ></td>
 				</tr>
 				<tr>
-					<td><img src="img/offer/Picture9.png" ></td>
-					<td><img src="img/offer/Picture14.png" ></td>
-					<td><img src="img/offer/Picture18.png" ></td>
+					<td><img class="pic" src="img/offer/Picture9.png" ><img class="picbig" src="img/offer/Picture9.png" ></td>
+					<td><img class="pic" src="img/offer/Picture14.png" ><img class="picbig" src="img/offer/Picture14.png" ></td>
+					<td><img class="pic" src="img/offer/Picture18.png" ><img class="picbig" src="img/offer/Picture18.png" ></td>
 				</tr>
 				<tr>
-					<td><img src="img/offer/Picture20.png" ></td>
-					<td><img src="img/offer/Picture22.png" ></td>
-					<td><img src="img/offer/Picture23.png" ></td>
+					<td><img class="pic" src="img/offer/Picture20.png" ><img class="picbig" src="img/offer/Picture20.png" ></td>
+					<td><img class="pic" src="img/offer/Picture22.png" ><img class="picbig" src="img/offer/Picture22.png" ></td>
+					<td><img class="pic" src="img/offer/Picture23.png" ><img class="picbig" src="img/offer/Picture23.png" ></td>
 				</tr>
 				<tr>
-					<td><img src="img/offer/Picture24.png" ></td>
-					<td><img src="img/offer/Picture26.png" ></td>
-					<td><img src="img/offer/Picture28.png" ></td>
+					<td><img class="pic" src="img/offer/Picture24.png" ><img class="picbig" src="img/offer/Picture24.png" ></td>
+					<td><img class="pic" src="img/offer/Picture26.png" ><img class="picbig" src="img/offer/Picture26.png" ></td>
+					<td><img class="pic" src="img/offer/Picture28.png" ><img class="picbig" src="img/offer/Picture28.png" ></td>
 				</tr>
 			</table>
 		</div>

@@ -118,11 +118,11 @@ ul.second li:hover .third{
 #offer tr td{
 	text-align:center;
 	width:33.3%;
-	border:2px solid grey;
-}
+	padding:15px;
+}/*
 #offer tr td img{
 	width:100%;
-}
+}*/
 .content,#offer{
 	background-color:white; 
 	padding:10px 200px;
