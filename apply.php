@@ -35,15 +35,13 @@
 				display:block;
 			}
 			#close_Picture24,#close_Picture37,#close_Picture18,#close_Picture20,#close_Picture34,#close_Picture14,#close_Picture22,#close_Picture28,#close_Picture23,#close_Picture38,#close_Picture26,#close_Picture39{
-				color:#aaaaaa;
+				/*color:#aaaaaa;*/
+				color:#000;
 				float:right;
 				font-size:28px;
 				font-weight:bold;
-			}
-			#close:hover, #close:focus{
-				color:#000;
-				text-decoration:none;
 				cursor:pointer;
+				text-decoration:none;
 			}
 			
 		</style>
