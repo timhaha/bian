@@ -26,6 +26,7 @@
 				left:0;
 				top:0;
 				display:none;
+				overflow:auto;
 			}
 			#special{
 				margin:auto;
